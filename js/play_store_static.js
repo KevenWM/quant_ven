@@ -1,7 +1,7 @@
 
 // Use fetch to read the CSV file
 function createChart_ps() {
-    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/playstore.csv')
+    fetch('https://kevenwm.github.io/quant_ven/data/playstore.csv')
         .then(response => response.text())
         .then(csv => {
 

@@ -1,7 +1,8 @@
 
 // Use fetch to read the CSV file
 function createChart_gd() {
-    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/glassdoor/glassdor.csv')
+    fetch('https://kevenwm.github.io/quant_ven/data/glassdoor/glassdor.csv')
+
         .then(response => response.text())
         .then(csv => {
 
@@ -52,7 +53,7 @@ function createChart_gd() {
 }
 
 function createChart_financial() {
-    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/glassdoor/Setor Financeiro.csv')
+    fetch('https://kevenwm.github.io/quant_ven/data/glassdoor/Setor Financeiro.csv')
         .then(response => response.text())
         .then(csv => {
 
@@ -103,7 +104,7 @@ function createChart_financial() {
 }
 
 function createChart_varejo() {
-    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/glassdoor/varejo.csv')
+    fetch('https://kevenwm.github.io/quant_ven/data/glassdoor/varejo.csv')
         .then(response => response.text())
         .then(csv => {
 
@@ -154,7 +155,7 @@ function createChart_varejo() {
 }
 
 function createChart_instagram() {
-    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/Instagram 2.csv')
+    fetch('https://kevenwm.github.io/quant_ven/data/Instagram 2.csv')
         .then(response => response.text())
         .then(csv => {
 

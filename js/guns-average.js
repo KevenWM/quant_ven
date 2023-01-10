@@ -1,7 +1,7 @@
 
 
 function create_guns() {
-    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/guns-average.csv')
+    fetch('https://kevenwm.github.io/quant_ven/data/guns-average.csv')
         .then(response => response.text())
         .then(csv => {
 
