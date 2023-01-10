@@ -11,6 +11,10 @@
     display: none;
 }
 
+.half {
+    height: 425px;
+}
+
 .map-hold {
     width: 100%;
     display: flex;
@@ -24,6 +28,25 @@
     height: 500px;
     margin: auto;
 }
+
+.select-button {
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.419);
+    color: black;
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+
+#select-map-hold {
+    width: 100%;
+    align-items: center;
+}
+
+#select-map-hold {
+    margin-left: 10%;
+}
+
+/* HIGHCHARTS */
 
 .highcharts-figure,
 .highcharts-data-table table {

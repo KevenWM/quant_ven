@@ -31,9 +31,6 @@ function loadnav() {
                         <li class="nav-item">
                             <a class="nav-link" href="tools.html">Ferramentas</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sair</a>
-                        </li>
 
                     </ul>
                 </div>

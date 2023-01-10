@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Display the dropdown menu on the HTML page
         document.getElementById('result2').innerHTML = result;
+       
     }
 
     var car_name = "AGENCY ARMS LLC"
@@ -37,52 +38,28 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(response => response.text())
             .then(csv => {
 
-                const rows = csv.split('\r')
+
+                const rows = csv.split('\n')
                 const firstRow = rows[0]; // Get the first row
                 const datas = firstRow.split(';'); // Split the row into columns using a semicolon as the separator
                 datas.shift()
 
-                console.log(rows[1])
+
 
                 const filteredRows = rows.filter(row => row.split(';')[0] === car_name);
 
                 const series_data = filteredRows[0].split(';')
+
                 series_data.shift()
                 series_data.shift()
+
+
 
                 for (let i = 0; i < series_data.length; i++) {
                     series_data[i] = parseFloat(series_data[i].replace(',', '.'));
                 }
-                //ANTIGO
-                // .then(response => response.text())
-                // .then(csvData => {
-                //     const rows = csvData.split('\n');
-                //     const data = rows.map(row => row.split(';'));
-                //     return data;
-                // })
-                //
-                // .then(data => data.map(row => row.map(cell => cell.replace('"', ''))))
-                //
-                //
-                // .then(data => data.filter(row => row[1] === car_name))
-                //
-                //
-                // .then(data => {
-                //
-                //
-                //     const dates = data.map(row => row[0]);
-                //
-                //     list = data.map(row => {
-                //
-                //         const price = row[2].replace('.', '')
-                //
-                //         return {
-                //             date: row[0],
-                //             car: row[1],
-                //             price: parseInt(price, 10)
-                //         };
-                //     });
-                //ANTIGO
+
+
 
 
                 Highcharts.chart('container2', {
@@ -112,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     series: [{
                         name: car_name,
-                        data: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+                        data: series_data
                     },
                     ],
 
@@ -146,6 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Get the select element
     const select = document.getElementById('result2');
+    
 
     // Add an input event listener to the select element
     select.addEventListener('input', function () {
@@ -154,8 +132,10 @@ document.addEventListener('DOMContentLoaded', () => {
         var car_name = xcar;
         carregar_guns(car_name)
 
-
     });
+
+    // Add an input event listener to the select element
+
 
 
 })

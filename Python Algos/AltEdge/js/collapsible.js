@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     var coll = document.getElementsByClassName("collapsible_own");
+
     var i;
 
     for (i = 0; i < coll.length; i++) {
@@ -8,8 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
             var content = this.nextElementSibling;
             if (content.style.display === "block") {
                 content.style.display = "none";
+
             } else {
                 content.style.display = "block";
+
             }
         });
     }

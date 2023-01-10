@@ -8,7 +8,8 @@
 }
 
 #database-holder {
-    width: 55%;
+    display: flex;
+    width: 80%;
     margin: auto;
 
 }
@@ -19,12 +20,13 @@
     margin: 10px;
 }
 
-#download-link {
+.download-link {
+    width: 33%;
     text-decoration: none;
     margin: 50px;
     color: white;
 }
 
-#download-link:hover {
+.download-link:hover {
     color: rgb(173, 171, 171);
 }

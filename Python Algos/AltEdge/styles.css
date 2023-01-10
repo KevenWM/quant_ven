@@ -15,7 +15,6 @@
 }
 
 #body-index:before,
-#body-graph:before,
 #body-data:before,
 #body-tools:before {
     content: "";
@@ -37,8 +36,7 @@
 }
 
 #body-graph {
-    background: black url('./img/background-graph.avif');
-    background-size: cover;
+    background-image: url('./img/universe.jpg');
 
 }
 
