@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // Call the readCSV function with a URL to retrieve and display the CSV data
-    readCSV('http://127.0.0.1:5500/Scrapping Locadoras/carros_movida_0km.csv');
+    readCSV('https://kevenwm.github.io/quant_ven/Python Algos/Scrapping Locadoras/carros_movida_0km.csv');
 
     // Criando menu dropdown to select the car
     async function readCSV(url) {
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let list;
 
 
-        fetch('http://127.0.0.1:5500/Scrapping Locadoras/carros_movida_0km.csv')
+        fetch('https://kevenwm.github.io/quant_ven/Python Algos/Scrapping Locadoras/carros_movida_0km.csv')
 
 
             // Parse the CSV data into a JavaScript array

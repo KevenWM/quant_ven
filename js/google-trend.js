@@ -1,6 +1,6 @@
 
 function trendrent() {
-    fetch('http://127.0.0.1:5500/AltEdge/data/gt-rent-a-car.csv')
+    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/gt-rent-a-car.csv')
 
         .then(response => response.text())
         .then(csvData => {
@@ -94,7 +94,7 @@ function trendrent() {
 }
 
 function trendjoalherias() {
-    fetch('http://127.0.0.1:5500/AltEdge/data/Joalherias.csv')
+    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/Joalherias.csv')
 
         .then(response => response.text())
         .then(csvData => {
@@ -187,7 +187,7 @@ function trendjoalherias() {
 }
 
 function trendsocial() {
-    fetch('http://127.0.0.1:5500/AltEdge/data/Redes Sociais.csv')
+    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/Redes Sociais.csv')
 
         .then(response => response.text())
         .then(csvData => {
@@ -287,7 +287,7 @@ function trendsocial() {
 }
 
 function trendmoda() {
-    fetch('http://127.0.0.1:5500/AltEdge/data/Soma-Arezzo e TFCO.csv')
+    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/Soma-Arezzo e TFCO.csv')
 
         .then(response => response.text())
         .then(csvData => {
@@ -394,7 +394,7 @@ function trendmoda() {
 }
 
 function trendecommerce() {
-    fetch('http://127.0.0.1:5500/AltEdge/data/Varejistas e-commerce.csv')
+    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/Varejistas e-commerce.csv')
 
         .then(response => response.text())
         .then(csvData => {
@@ -501,7 +501,7 @@ function trendecommerce() {
 }
 
 function trendecommerceworld() {
-    fetch('http://127.0.0.1:5500/AltEdge/data/Varejistas estrangeiras e-commerce.csv')
+    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/Varejistas estrangeiras e-commerce.csv')
 
         .then(response => response.text())
         .then(csvData => {
@@ -605,7 +605,7 @@ function trendecommerceworld() {
 }
 
 function trendesporte() {
-    fetch('http://127.0.0.1:5500/AltEdge/data/Varejo esportivo.csv')
+    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/Varejo esportivo.csv')
 
         .then(response => response.text())
         .then(csvData => {
@@ -711,7 +711,7 @@ function trendesporte() {
         });
 }
 function trendlowincome() {
-    fetch('http://127.0.0.1:5500/AltEdge/data/Vestuário Baixa Renda.csv')
+    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/Vestuário Baixa Renda.csv')
 
         .then(response => response.text())
         .then(csvData => {

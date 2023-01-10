@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function carregar_mapa(classe) {
 
         if (classe === 'Drogarias') {
-            let code_map = '<iframe src="../map.html" frameborder="0" class="map"></iframe>'
+            let code_map = '<iframe src="map.html" frameborder="0" class="map"></iframe>'
             document.getElementById('map-iframe').innerHTML = code_map;
         }
         else {
-            let code_map2 = '<iframe src="../map_jewels.html" frameborder="0" class="map"></iframe>'
+            let code_map2 = '<iframe src="map_jewels.html" frameborder="0" class="map"></iframe>'
             document.getElementById('map-iframe').innerHTML = code_map2;
         }
 

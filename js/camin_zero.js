@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('http://127.0.0.1:5500/AltEdge/data/other data/marcas_zerokm.csv')
+    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/other data/marcas_zerokm.csv')
 
         .then(response => response.text())
         .then(csvData => {
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         });
 
-    fetch('http://127.0.0.1:5500/AltEdge/data/other data/marcas_seminovo.csv')
+    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/other data/marcas_seminovo.csv')
 
         .then(response => response.text())
         .then(csvData => {
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         });
 
-    fetch('http://127.0.0.1:5500/AltEdge/data/other data/caminhao.csv')
+    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/other data/caminhao.csv')
 
         .then(response => response.text())
         .then(csvData => {

@@ -1,7 +1,7 @@
 
 
 function createrm_varejo() {
-    fetch('http://127.0.0.1:5500/AltEdge/data/reclame aqui/varejo.csv')
+    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/reclame aqui/varejo.csv')
         .then(response => response.text())
         .then(csv => {
 
@@ -52,7 +52,7 @@ function createrm_varejo() {
 }
 
 function createrm_bancos() {
-    fetch('http://127.0.0.1:5500/AltEdge/data/reclame aqui/bancos.csv')
+    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/reclame aqui/bancos.csv')
         .then(response => response.text())
         .then(csv => {
 
@@ -103,7 +103,7 @@ function createrm_bancos() {
 }
 
 function createrm_drogarias() {
-    fetch('http://127.0.0.1:5500/AltEdge/data/reclame aqui/drogarias.csv')
+    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/reclame aqui/drogarias.csv')
         .then(response => response.text())
         .then(csv => {
 
@@ -153,7 +153,7 @@ function createrm_drogarias() {
         });
 }
 function createrm_locadoras() {
-    fetch('http://127.0.0.1:5500/AltEdge/data/reclame aqui/locadoras.csv')
+    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/reclame aqui/locadoras.csv')
         .then(response => response.text())
         .then(csv => {
 
@@ -203,7 +203,7 @@ function createrm_locadoras() {
         });
 }
 function createrm_restaurantes() {
-    fetch('http://127.0.0.1:5500/AltEdge/data/reclame aqui/restaurantes.csv')
+    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/reclame aqui/restaurantes.csv')
         .then(response => response.text())
         .then(csv => {
 
@@ -253,7 +253,7 @@ function createrm_restaurantes() {
         });
 }
 function createrm_vestuario() {
-    fetch('http://127.0.0.1:5500/AltEdge/data/reclame aqui/vestuario.csv')
+    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/reclame aqui/vestuario.csv')
         .then(response => response.text())
         .then(csv => {
 

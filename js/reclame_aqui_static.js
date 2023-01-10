@@ -1,7 +1,7 @@
 
 // Use fetch to read the CSV file
 function createChart() {
-    fetch('http://127.0.0.1:5500/AltEdge/data/Reclame11.csv')
+    fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/Reclame11.csv')
         .then(response => response.text())
         .then(csv => {
 

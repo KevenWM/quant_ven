@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // Call the readCSV function with a URL to retrieve and display the CSV data
-    readCSV('http://127.0.0.1:5500/AltEdge/data/gunsprice.csv');
+    readCSV('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/gunsprice.csv');
 
     // Criando menu dropdown to select the car
     async function readCSV(url) {
@@ -27,14 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Display the dropdown menu on the HTML page
         document.getElementById('result2').innerHTML = result;
-       
+
     }
 
     var car_name = "AGENCY ARMS LLC"
 
     function carregar_guns(car_name) {
 
-        fetch('http://127.0.0.1:5500/AltEdge/data/gunsprice.csv')
+        fetch('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/gunsprice.csv')
             .then(response => response.text())
             .then(csv => {
 
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Get the select element
     const select = document.getElementById('result2');
-    
+
 
     // Add an input event listener to the select element
     select.addEventListener('input', function () {

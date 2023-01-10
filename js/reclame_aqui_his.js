@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Call the readCSV function with a URL to retrieve and display the CSV data
-    readCSV('http://127.0.0.1:5500/AltEdge/data/Reclame11.csv');
+    readCSV('https://kevenwm.github.io/quant_ven/Python Algos/AltEdge/data/Reclame11.csv');
 
     // Criando menu dropdown to select the car
     async function readCSV(url) {
