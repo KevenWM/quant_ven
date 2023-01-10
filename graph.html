@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/Logo.ico">
+    <title>Vêneto Alt</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/graph.css">
+
+
+    <!--BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <!--Import Libs-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-csv@0.8.3/src/jquery.csv.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+
+    <!--Javascript-->
+    <script src="js/nav-bar.js"></script>
+    <script src="js/collapsible.js"></script>
+    <script src="js/car-rental.js"></script>
+    <script src="js/guns.js"></script>
+    <script src="js/reclame_aqui_static.js"></script>
+    <script src="js/reclame_aqui_his.js"></script>
+    <script src="js/play_store_static.js"></script>
+    <script src="js/play_store_his.js"></script>
+    <script src="js/car-rent-group.js"></script>
+    <script src="js/google-trend.js"></script>
+    <script src="js/map-change.js"></script>
+    <script src="js/glassdor.js"></script>
+    <script src="js/reclame_sector.js"></script>
+    <script src="js/guns-average.js"></script>
+    <script src="js/camin_zero.js"></script>
+
+</head>
+
+
+<body id="body-graph" Onload="loadnav()">
+    <!--NAVBAR-->
+    <header id="navbarmenu">
+
+        <!--FAKE NAVBAR-->
+        <div class="bg-dark">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand text-light" href="index.html">
+                            <img class="m" src="img/v-logobranco.png" alt="Icon" width="60" height="60"
+                                class="d-inline-block align-text-top">
+                            Vêneto Alt
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse " id="navbarNav">
+                            <ul class="navbar-nav ms-auto ">
+                                <li class="nav-item ">
+                                    <a class="nav-link " aria-current="page" href="index.html">Início</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="graph.html">Gráficos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="database.html">Databases</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="tools.html">Ferramentas</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--FAKE NAVBAR-->
+
+    </header>
+
+
+
+    <!--DIV GRAPH-->
+
+    <p type="button" class="collapsible_own graph-tittle">Rental Cars <img src="img/arrowdown.png" class="divback"
+            width="15" height="15"></p>
+
+    <div class="graph-holder">
+
+        <figure class="highcharts-figure">
+            <select id="result" class="select-button">
+            </select>
+            <div id="container"> </div>
+        </figure>
+        <figure class="highcharts-figure">
+
+            <div id="rental-group"> </div>
+        </figure>
+        <figure class="highcharts-figure">
+
+            <div id="camin-zero"> </div>
+        </figure>
+        <figure class="highcharts-figure">
+
+            <div id="camin-semi"> </div>
+        </figure>
+        <figure class="highcharts-figure">
+
+            <div id="camin"> </div>
+        </figure>
+
+
+    </div>
+
+
+
+    <p type="button" class="collapsible_own graph-tittle">Guns <img src="img/arrowdown.png" class="divback" width="15"
+            height="15"></p>
+
+    <div class="graph-holder">
+
+        <figure class="highcharts-figure">
+            <select id="result2" class="select-button">
+            </select>
+
+            <div id="container2"> </div>
+        </figure>
+
+        <div class="half">
+            <figure class="highcharts-figure">
+                <div id="guns-average"> </div>
+            </figure>
+        </div>
+    </div>
+
+    <p type="button" class="collapsible_own graph-tittle">Reclame Aqui <img src="img/arrowdown.png" class="divback"
+            width="15" height="15"></p>
+
+    <div class="graph-holder">
+        <div class="half">
+            <figure class="highcharts-figure">
+
+                <div id="container3"> </div>
+            </figure>
+        </div>
+        <div class="half">
+            <figure class="highcharts-figure">
+                <select id="result_reclame" class="select-button">
+                </select>
+                <div id="container5"> </div>
+            </figure>
+        </div>
+        <div class="half">
+            <figure class="highcharts-figure">
+
+                <div id="containerm-varejo"> </div>
+            </figure>
+        </div>
+        <div class="half">
+            <figure class="highcharts-figure">
+
+                <div id="containerm-bancos"> </div>
+            </figure>
+        </div>
+        <div class="half">
+            <figure class="highcharts-figure">
+
+                <div id="containerm-drogarias"> </div>
+            </figure>
+        </div>
+        <div class="half">
+            <figure class="highcharts-figure">
+
+                <div id="containerm-locadoras"> </div>
+            </figure>
+        </div>
+        <div class="half">
+            <figure class="highcharts-figure">
+
+                <div id="containerm-vestuario"> </div>
+            </figure>
+        </div>
+        <div class="half">
+            <figure class="highcharts-figure">
+
+                <div id="containerm-restaurantes"> </div>
+            </figure>
+        </div>
+
+
+    </div>
+
+    <p type="button" class="collapsible_own graph-tittle">Play Store <img src="img/arrowdown.png" class="divback"
+            width="15" height="15"></p>
+
+    <div class="graph-holder">
+        <div class="half">
+            <figure class="highcharts-figure">
+                <div id="container4"> </div>
+            </figure>
+        </div>
+
+        <div class="half">
+            <figure class="highcharts-figure">
+                <select id="result_play" class="select-button">
+                </select>
+                <div id="container6"> </div>
+            </figure>
+        </div>
+
+
+
+    </div>
+
+    <p type="button" class="collapsible_own graph-tittle">Glassdoor<img src="img/arrowdown.png" class="divback"
+            width="15" height="15"></p>
+
+    <div class="graph-holder">
+        <div class="half">
+            <figure class="highcharts-figure">
+                <div id="container-gd"> </div>
+            </figure>
+        </div>
+        <div class="half">
+            <figure class="highcharts-figure">
+                <div id="container-financial"> </div>
+            </figure>
+        </div>
+        <div class="half">
+            <figure class="highcharts-figure">
+                <div id="container-varejo"> </div>
+            </figure>
+        </div>
+
+
+    </div>
+
+
+    <p type="button" class="collapsible_own graph-tittle">Mapa de Lojas <img src="img/arrowdown.png" class="divback"
+            width="15" height="15"></p>
+    <div class="graph-holder">
+        <div id="select-map-hold">
+            <select id="map-select" class="select-button">
+                <option value="Drogarias">Drogarias</option>
+                <option value="Joalherias">Joalherias</option>
+            </select>
+        </div>
+        <div id="map-iframe" class="map-hold">
+
+
+            <!--<iframe src="../map.html" frameborder="0" class="map"></iframe>-->
+
+
+        </div>
+    </div>
+
+    <p type="button" class="collapsible_own graph-tittle">Google Trends <img src="img/arrowdown.png" class="divback"
+            width="15" height="15"></p>
+
+    <div class="graph-holder">
+        <div class="half">
+            <figure class="highcharts-figure">
+                <div id="gtrent"></div>
+            </figure>
+        </div>
+        <div class="half">
+            <figure class="highcharts-figure">
+                <div id="gtjewels"></div>
+            </figure>
+        </div>
+        <div class="half">
+            <figure class="highcharts-figure">
+                <div id="gtsocial"></div>
+            </figure>
+        </div>
+        <div class="half">
+            <figure class="highcharts-figure">
+                <div id="gtmoda"></div>
+            </figure>
+        </div>
+        <div class="half">
+            <figure class="highcharts-figure">
+                <div id="gtecommerce"></div>
+            </figure>
+        </div>
+        <div class="half">
+            <figure class="highcharts-figure">
+                <div id="gtecommerceworld"></div>
+            </figure>
+        </div>
+        <div class="half">
+            <figure class="highcharts-figure">
+                <div id="gtesporte"></div>
+            </figure>
+        </div>
+        <div class="half">
+            <figure class="highcharts-figure">
+                <div id="gtlowincome"></div>
+            </figure>
+        </div>
+    </div>
+
+    <p type="button" class="collapsible_own graph-tittle">Instagram Populatiry <img src="img/arrowdown.png"
+            class="divback" width="15" height="15"></p>
+
+    <div class="graph-holder">
+        <div class="half">
+            <figure class="highcharts-figure">
+                <div id="container-instagram"> </div>
+            </figure>
+        </div>
+    </div>
+
+    <!--END DIV GRAPH-->
+
+
+</body>
+
+</html>
